@@ -1,17 +1,29 @@
 // src/App.tsx
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
+import { routes } from './routes';
 
-import Landing from './pages/Landing/Landing';
-import Login from './pages/Login/Login';
-import Register from './pages/Register/Register';
+const TitleUpdater = () => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const currentRoute = routes.find(r => r.path === location.pathname);
+    if (currentRoute) {
+      document.title = currentRoute.title;
+    }
+  }, [location.pathname]);
+
+  return null;
+};
 
 function App() {
   return (
     <Router>
+      <TitleUpdater />
       <Routes>
-        <Route path="/" element={<Landing />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+        {routes.map(({ path, element }) => (
+          <Route key={path} path={path} element={element} />
+        ))}
       </Routes>
     </Router>
   );
