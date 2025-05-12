@@ -1,4 +1,4 @@
-.login-container::before {
+  .login-container::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -23,7 +23,8 @@
     top: 0;
     left: 0;
     width: 100%;
-    padding: 24px 40px;
+    height: 80px; /* 고정 높이 추가 */
+    padding: 0 40px;
     box-sizing: border-box;
   }
   
@@ -32,14 +33,19 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: center; /* 수직 정렬 핵심 */
+    height: 100%;
   }
   
-  .logo {
-    font-size: 32px;
-    font-weight: 900;
-    color: #e50914;
-    letter-spacing: -1px;
+  .logo-image {
+    width: 140px;
+    height: auto;
+    display: block;
+    margin: 0;
+  }
+  
+  .logo-image:hover {
+    transform: scale(1.05); /* 약간 커지는 효과 */
   }
   
   .login-button {

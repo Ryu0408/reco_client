@@ -1,0 +1,12 @@
+<svg width="160" height="80" viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 곡선의 Y 좌표를 기존 60 → 100으로 올려서 완만하게 만듦 -->
+    <path id="curve" d="M50,150 Q200,100 350,150" fill="none"/>
+  </defs>
+
+  <text font-size="80" font-weight="900" fill="#e50914" letter-spacing="3" font-family="Arial, sans-serif">
+    <textPath href="#curve" startOffset="50%" text-anchor="middle">
+      RYUFLIX
+    </textPath>
+  </text>
+</svg>

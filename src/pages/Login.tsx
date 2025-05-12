@@ -14,7 +14,7 @@ const Login = () => {
       {/* 헤더 */}
       <header className="login-header">
         <div className="header-content">
-          <h1 className="logo">RYUFLIX</h1>
+          <img src="/src/assets/logo/ryuflix.svg" alt="RYUFLIX 로고" className="logo-image" />
           <button className="login-button">로그인</button>
         </div>
       </header>

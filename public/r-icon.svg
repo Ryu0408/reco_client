@@ -1,7 +1,18 @@
 <svg width="64" height="64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-  <rect width="64" height="64" fill="black"/>
+  <defs>
+    <!-- 그라디언트 정의 -->
+    <linearGradient id="textGradient" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#e50914"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 배경은 투명 -->
+  <rect width="64" height="64" fill="none"/>
+
+  <!-- 텍스트에 그라디언트 적용 -->
   <text x="50%" y="50%" text-anchor="middle" dominant-baseline="central"
-        font-family="Arial, sans-serif" font-size="50" fill="#e50914" font-weight="bold">
+        font-family="Arial, sans-serif" font-size="80" fill="url(#textGradient)" font-weight="bold">
     R
   </text>
 </svg>
