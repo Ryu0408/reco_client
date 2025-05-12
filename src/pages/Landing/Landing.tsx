@@ -30,7 +30,7 @@ const Landing = () => {
       {/* 헤더 */}
       <header className="landing-header">
         <div className="header-content">
-          <img src="/src/assets/logo/ryuflix.svg" alt="RYUFLIX 로고" className="logo-image" />
+          <img src="/logo/ryuflix.svg" alt="RYUFLIX 로고" className="logo-image" />
           <button className="landing-button">로그인</button>
         </div>
       </header>
