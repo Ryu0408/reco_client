@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { type FormData } from '../types/FormData';
 
 const RegisterForm = () => {
+
   const [form, setForm] = useState<FormData>({
     user_email: '',
     user_password: '',
