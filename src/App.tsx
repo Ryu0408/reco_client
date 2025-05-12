@@ -1,9 +1,9 @@
-import RegisterForm from './components/RegisterForm';
+import Login from './pages/Login';
 
 function App() {
   return (
     <div className="min-h-screen bg-gray-100">
-      <RegisterForm />
+      <Login />
     </div>
   );
 }
