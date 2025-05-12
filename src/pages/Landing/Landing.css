@@ -1,4 +1,4 @@
-  .login-container::before {
+  .landing-container::before {
     content: '';
     position: absolute;
     inset: 0;
@@ -6,7 +6,7 @@
     z-index: 0;
   }
   
-  .login-container {
+  .landing-container {
     position: relative;
     width: 100vw;
     height: 100vh;
@@ -18,7 +18,7 @@
   }
   
   /* 헤더 */
-  .login-header {
+  .landing-header {
     position: absolute;
     top: 0;
     left: 0;
@@ -48,7 +48,7 @@
     transform: scale(1.05); /* 약간 커지는 효과 */
   }
   
-  .login-button {
+  .landing-button {
     background-color: #e50914;
     color: white;
     padding: 10px 24px;
@@ -59,12 +59,12 @@
     cursor: pointer;
   }
   
-  .login-button:hover {
+  .landing-button:hover {
     background-color: #b20710;
   }
   
   /* 메인 콘텐츠 */
-  .login-main {
+  .landing-main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,7 +73,7 @@
     text-align: center;
   }
   
-  .login-box {
+  .landing-box {
     width: 100%;
     max-width: 640px;
     padding: 48px;
@@ -95,14 +95,14 @@
     margin-bottom: 36px;
   }
   
-  .login-form {
+  .landing-form {
     display: flex;
     flex-direction: column;
     gap: 16px;
   }
   
   @media (min-width: 640px) {
-    .login-container::after {
+    .landing-container::after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -111,7 +111,7 @@
         background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
         z-index: 0;
     }
-    .login-form {
+    .landing-form {
       flex-direction: row;
     }
   }

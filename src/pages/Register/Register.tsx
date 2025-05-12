@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { type FormData } from '../types/FormData';
+import { type FormData } from '../../types/FormData';
 
-const RegisterForm = () => {
+const Register = () => {
 
   const [form, setForm] = useState<FormData>({
     user_email: '',
@@ -69,4 +69,4 @@ const RegisterForm = () => {
   );
 };
 
-export default RegisterForm;
+export default Register;
