@@ -3,6 +3,7 @@
 ---
 
 [👉 배포된 사이트 바로가기](https://reco-client-nu.vercel.app/)
+[👉 ERD](https://www.erdcloud.com/d/uCAkSgPD6LHhFkF2Z/)
 
 ---
 
@@ -22,6 +23,8 @@ src/
 ├── api/            # API 함수 관리
 ├── assets/         # 이미지, 아이콘 등
 ├── components/     # 재사용 UI 컴포넌트
+├── constants/      # 상수
 ├── pages/          # 각 페이지
 ├── styles/         # 전역 스타일
-└── main.tsx
+├── main.tsx
+└── routes.tsx      # 라우팅 설정
